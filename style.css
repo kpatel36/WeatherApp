@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body {
+    background-color: rgba(149, 233, 218, 0.605);
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{    
+    padding: 15px;
+}
+
+.form-group{
+    display: flex;
+    flex:100%;
+    height: 44px;
+    border: 1px solid transparent;
+    justify-content: space-between;
+}
+
+.form-control{
+    display: flex;
+    flex-grow: 3;
+    padding: 5px 4px 0 14px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    box-shadow: 1px 2px 5px 1px rgb(64, 60, 67, .26);
+}
+
+.btn{
+    border: 1px solid transparent;
+    border-radius: 20px;
+    box-shadow: 1px 2px 2px 1px rgba(0,0,0, 0.605);
+    text-shadow: 3px rgba(47, 43, 49, 0.45);
+}
+
+.btn:hover{
+    background-color: black;
+    color:white;
+    border: 3px whitesmoke solid;
+}
+
+.card,.time-date{
+    border: 2px solid transparent;
+    box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    justify-content: space-around;
+    background: rgba(0, 24, 24, 0.45);
+    padding: 15px;
+    text-transform: capitalize;
+    color: white;
+    margin: 15px 25px;    
+    text-align: center;
+    transition: transform 450ms;
+}
+
+
+.card:hover, .time-date:hover{
+    transform: scale(1.08);
+    filter:drop-shadow(15px 11px 14px rgb(211, 211, 211));
+    background-color: rgba(16, 16, 19, 0.30);
+}
+
+
+#weatherIcon{
+    filter:drop-shadow(5px 1px 5px lightgray);
+}
+
+
+.title{
+    font-weight: 500;
+}
+
+
+.time-date-item{
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*aligns to vertical center of container*/
+    align-content: stretch;
+    font-weight: 500;
+    transition: transform 450ms;
+    filter:drop-shadow(1px 1px 1px lightgray);
+}
+
+.weather-item{
+    display: flex;
+    justify-content: space-between;
+    filter:drop-shadow(1px 1px 1px lightgray);
+
+}
+
+.weather-item2{
+    display: flex;
+    justify-content: center;
+}
+
+.time-date-item:hover,.weather-item:hover, .weather-item2:hover{
+    color:rgb(1, 32, 99);
+    filter:drop-shadow(2px 2px 2px rgb(186, 186, 235));
+    text-transform: uppercase;
+    font-weight:bolder;
+    transform:scale(1.05);
+}
+
+
+/* snow gif: http://csshint.com/wp-content/uploads/2020/09/Falling-Snowflake-Animation.gif 
+add to card css
+    background-image: url("http://csshint.com/wp-content/uploads/2020/09/Falling-Snowflake-Animation.gif") ;
+    background-repeat: no-repeat;
+    background-size: cover; */
+
+/*rain gif: https://64.media.tumblr.com/475f62ccd3ff499105a79ac8b67711e2/6025a433cd47175f-a3/s540x810/54d94f3aacbb8ceddb42ecf8df32f0db7c493d9f.gifv*/
